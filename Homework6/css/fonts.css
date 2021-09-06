@@ -1,0 +1,20 @@
+@font-face {
+    font-family: "AzeretMono", monospace;
+    src: url(../fonts/AzeretMono/AzeretMono-Regular.ttf);
+}
+@font-face {
+    font-family: "AzeretMonoThin", monospace;
+    src: url(../fonts/AzeretMono/AzeretMono-Thin.ttf);
+}
+@font-face {
+    font-family: "AzeretMonoThinItalic", monospace;
+    src: url(../fonts/AzeretMono/AzeretMono-ThinItalic.ttf);
+}
+@font-face {
+    font-family: "AzeretMonoBlack", monospace;
+    src: url(../fonts/AzeretMono/AzeretMono-Black.ttf);
+}
+@font-face {
+    font-family: "AzeretMonoBlackItalic", monospace;
+    src: url(../fonts/AzeretMono/AzeretMono-BlackItalic.ttf);
+}
