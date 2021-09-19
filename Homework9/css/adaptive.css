@@ -1,125 +1,60 @@
-@media only screen and (min-width: 768px) {
-    * {
-        box-sizing: border-box;
-    }
-    body {
-        background-color: rgb(235, 229, 217);
-        background-size: cover;
-        margin: 0;
-        padding: 0;
-    }
+@media (min-width: 768px) {
     #wrapper {
-        position: relative;
-        overflow-x: hidden;
         margin: 35px;
     }
-    .inline-block {
-        width: auto;
-        height: auto;
-    }
     .inline-block .col {
-        background-color: rgb(255, 255, 255);
-        display: inline-block;
         height: 400px;
         margin: 5px 5px 35px 5px;
         padding: 20px;
     }
     .col h2 {
-        font-family: "Ubuntu", sans-serif;
         font-size: 45px;
-        font-weight: bold;
-        font-style: normal;
-        color: black;
         padding-top: 20px;
     }
     .col p {
-        font-family: "Ubuntu", sans-serif;
         font-size: 30px;
-        font-weight: 300;
-        font-style: normal;
-        color: black;
         padding-top: 10px;
     }
     .clearfix {
-        height: auto;
-        width: auto;
         padding-bottom: 5px;
         margin: 5px 5px 5px 5px;
         background-color: rgb(255, 255, 255);
     }
     .clearfix h2 {
-        font-family: "Ubuntu", sans-serif;
         font-size: 45px;
-        font-weight: bold;
-        font-style: normal;
-        color: black;
         padding-top: 20px;
         padding-left: 20px;
         padding-right: 20px;
     }
     .clearfix p {
-        font-family: "Ubuntu", sans-serif;
         font-size: 30px;
-        font-weight: 300;
-        font-style: normal;
-        color: black;
         padding-left: 20px;
         padding-right: 20px;
         padding-bottom: 20px;
     }
     .navigation {
-        height: auto;
         padding: 20px;
-    }
-    .navigation ul {
-        background-color: rgb(163, 157, 157);
-        z-index: 1;
     }
     .navigation li {
         height: 90px;
-        font-family: "Ubuntu", sans-serif;
         font-size: 30px;
-        font-weight: normal;
-        font-style: normal;
-        color: black;
-        z-index: 2;
         padding: 20px;
     }
     .navigation h2 {
-        font-family: "Ubuntu", sans-serif;
         font-size: 45px;
-        font-weight: bold;
-        font-style: normal;
-        color: black;
-        padding-top: 10px;
-        padding-bottom: 5px;
-        padding-left: 0;
         padding-bottom: 15px;
+        padding-left: 0;
+        padding-top: 0;
     }
 }
-@media only screen and (min-width: 1024px) {
-    * {
-        box-sizing: border-box;
-    }
-    body {
-        background-color: rgb(235, 229, 217);
-        background-size: cover;
-        margin: 0;
-        padding: 0;
-    }
+@media (min-width: 1024px) {
     #wrapper {
-        position: relative;
-        overflow-x: hidden;
         margin: 35px 100px 35px 100px;
     }
     .inline-block {
-        height: auto;
-        width: auto;
         margin: 0;
     }
     .inline-block .col {
-        background-color: rgb(255, 255, 255);
-        display: inline-block;
         height: 300px;
         width: calc(100vw / 3 - 95px);
         min-width: 240px;
@@ -128,27 +63,14 @@
         padding: 20px;
     }
     .col h2 {
-        font-family: "Ubuntu", sans-serif;
         font-size: 30px;
-        font-weight: bold;
-        font-style: normal;
-        color: black;
-        padding-top: 10px;
         padding-bottom: 10px;
         padding-right: 10px;
     }
     .col p {
-        font-family: "Ubuntu", sans-serif;
         font-size: 15px;
-        font-weight: 300;
-        font-style: normal;
-        color: black;
-        padding-top: 10px;
     }
     .clearfix {
-        height: auto;
-        width: auto;
-        padding-bottom: 5px;
         margin: 10px 10px 5px 10px;
         background-color: rgb(255, 255, 255);
     }
@@ -158,51 +80,19 @@
         display: block;
     }
     .clearfix h2 {
-        font-family: "Ubuntu", sans-serif;
         font-size: 30px;
-        font-weight: bold;
-        font-style: normal;
-        color: black;
-        padding-left: 20px;
-        padding-right: 20px;
     }
     .clearfix p {
-        font-family: "Ubuntu", sans-serif;
         font-size: 15px;
-        font-weight: 300;
-        font-style: normal;
-        color: black;
-        padding-left: 20px;
-        padding-right: 20px;
-        padding-bottom: 20px;
     }
     .navigation {
-        height: auto;
         width: 400px;
-        padding: 20px;
         float: right;
     }
-    .navigation ul {
-        background-color: rgb(163, 157, 157);
-        z-index: 1;
-    }
     .navigation li {
-        height: 90px;
-        font-family: "Ubuntu", sans-serif;
         font-size: 20px;
-        font-weight: normal;
-        font-style: normal;
-        color: black;
-        z-index: 2;
-        padding: 20px;
     }
     .navigation h2 {
-        font-family: "Ubuntu", sans-serif;
         font-size: 30px;
-        font-weight: bold;
-        font-style: normal;
-        color: black;
-        padding-left: 0;
-        padding-top: 0;
     }
 }
