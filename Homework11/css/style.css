@@ -1,0 +1,175 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+@font-face {
+  font-family: "Ubuntu", sans-serif;
+  src: url(../fonts/Ubuntu/Ubuntu-Regular.ttf);
+}
+@font-face {
+  font-family: "UbuntuLight", sans-serif;
+  src: url(../fonts/Ubuntu/Ubuntu-Light.ttf);
+}
+@font-face {
+  font-family: "UbuntuLightItalic", sans-serif;
+  src: url(../fonts/Ubuntu/Ubuntu-LightItalic.ttf);
+}
+@font-face {
+  font-family: "UbuntuBold", sans-serif;
+  src: url(../fonts/Ubuntu/Ubuntu-Bold.ttf);
+}
+@font-face {
+  font-family: "UbuntuBoldItalic", sans-serif;
+  src: url(../fonts/Ubuntu/Ubuntu-BoldItalic.ttf);
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--general-color);
+  margin: 0;
+  padding: 0;
+}
+
+#wrapper {
+  position: relative;
+  overflow-x: hidden;
+  margin: 5%;
+}
+
+:root {
+  --general-color: palevioletred;
+  --box-color: cornflowerblue;
+}
+
+h2 {
+  font-family: "UbuntuBold", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  font-style: normal;
+  padding-top: 10px;
+  text-align: center;
+}
+
+p {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  font-style: normal;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.flex {
+  height: calc(100% - 10%);
+}
+@media (min-width: 580px) and (max-width: 1023px) {
+  .flex {
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+@media (min-width: 1024px) {
+  .flex {
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+
+.flex-container {
+  min-height: 800px;
+}
+@media (min-width: 580px) and (max-width: 1023px) {
+  .flex-container {
+    width: calc(100% - 40%);
+    min-height: calc(100% - 10%);
+    margin-right: 5%;
+  }
+}
+@media (min-width: 1024px) {
+  .flex-container {
+    display: flex;
+    width: calc(100% - 40%);
+    margin-right: 5%;
+  }
+}
+
+.flex-box {
+  background-color: var(--box-color);
+  min-height: 400px;
+  border: 1px solid black;
+}
+@media (min-width: 580px) and (max-width: 1023px) {
+  .flex-box {
+    min-height: calc(100vh / 2);
+  }
+}
+@media (min-width: 1024px) {
+  .flex-box {
+    width: 50%;
+  }
+}
+
+.flex-sidebar {
+  min-height: 200px;
+  border: 1px solid black;
+}
+@media (min-width: 580px) and (max-width: 1023px) {
+  .flex-sidebar {
+    width: calc(100% - 65%);
+  }
+}
+@media (min-width: 1024px) {
+  .flex-sidebar {
+    width: calc(100% - 65%);
+  }
+}/*# sourceMappingURL=style.css.map */

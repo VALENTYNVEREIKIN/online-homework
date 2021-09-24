@@ -1,0 +1,92 @@
+@import "reset";
+@import "fonts";
+@import "vars";
+
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--general-color);
+    margin: 0;
+    padding: 0;
+}
+#wrapper {
+    position: relative;
+    overflow-x: hidden;
+    margin: 5%;
+}
+:root {
+    --general-color: palevioletred;
+    --box-color: cornflowerblue;
+}
+@mixin flexbox($display: flex, $jsfcnt: flex-start) {
+    display: $display;
+    justify-content: $jsfcnt;
+}
+h2 {
+    font-family: "UbuntuBold", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    font-style: normal;
+    padding-top: 10px;
+    text-align: center;
+}
+p {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+    padding-top: 10px;
+    text-align: center;
+}
+.flex {
+    height: calc(100% - 10%);
+
+    @media (min-width: 580px) and (max-width: 1023px) {
+        @include flexbox(flex, flex-start);
+    }
+
+    @media (min-width: 1024px) {
+        @include flexbox(flex, flex-start);
+    }
+}
+.flex-container {
+    min-height: 800px;
+
+    @media (min-width: 580px) and (max-width: 1023px) {
+        width: $fcw;
+        min-height: calc(100% - 10%);
+        margin-right: $mr;
+    }
+
+    @media (min-width: 1024px) {
+        display: $display;
+        width: $fcw;
+        margin-right: $mr;
+    }
+}
+.flex-box {
+    background-color: var(--box-color);
+    min-height: 400px;
+    border: $br;
+
+    @media (min-width: 580px) and (max-width: 1023px) {
+        min-height: calc(100vh / 2);
+    }
+
+    @media (min-width: 1024px) {
+        width: 50%;
+    }
+}
+.flex-sidebar {
+    min-height: 200px;
+    border: $br;
+
+    @media (min-width: 580px) and (max-width: 1023px) {
+        width: $fsw;
+    }
+
+    @media (min-width: 1024px) {
+        width: $fsw;
+    }
+}
