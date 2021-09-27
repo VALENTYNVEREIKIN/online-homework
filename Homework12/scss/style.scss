@@ -1,0 +1,157 @@
+@import "reset";
+@import "fonts";
+@import "vars";
+
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--body-color);
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --body-color: chocolate;
+}
+#wrapper {
+    display: $d-flex;
+    position: relative;
+    overflow-x: hidden;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+}
+@keyframes redcolor {
+    0%{
+        background-color: rgb(255, 55, 55);
+    }
+    50%{
+        background-color: rgb(255, 55, 55);
+    }
+    51%{
+        background-color: rgb(66, 0, 0);
+    }
+    100%{
+        background-color: rgb(66, 0, 0);
+    }
+}
+@keyframes yellowcolor {
+    0%{
+        background-color: rgb(65, 63, 0);
+    }
+    38%{
+        background-color: rgb(65, 63, 0);
+    }
+    39%{
+        background-color: rgb(255, 247, 0);
+    }
+    40%{
+        background-color: rgb(65, 63, 0);
+    }
+    41%{
+        background-color: rgb(255, 247, 0);
+    }
+    42%{
+        background-color: rgb(65, 63, 0);
+    }
+    43%{
+        background-color: rgb(255, 247, 0);
+    }
+    44%{
+        background-color: rgb(65, 63, 0);
+    }
+    45%{
+        background-color: rgb(255, 247, 0);
+    }
+    50%{
+        background-color: rgb(255, 247, 0);
+    }
+    51%{
+        background-color: rgb(65, 63, 0);
+    }
+    88%{
+        background-color: rgb(65, 63, 0);
+    }
+    89%{
+        background-color: rgb(255, 247, 0);
+    }
+    90%{
+        background-color: rgb(65, 63, 0);
+    }
+    91%{
+        background-color: rgb(255, 247, 0);
+    }
+    92%{
+        background-color: rgb(65, 63, 0);
+    }
+    93%{
+        background-color: rgb(255, 247, 0);
+    }
+    94%{
+        background-color: rgb(65, 63, 0);
+    }
+    95%{
+        background-color: rgb(255, 247, 0);
+    }
+    100%{
+        background-color: rgb(255, 247, 0);
+    }
+}
+@keyframes greencolor {
+    0%{
+        background-color: rgb(1, 39, 0);
+    }
+    50%{
+        background-color: rgb(1, 39, 0);
+    }
+    51%{
+        background-color: rgb(9, 255, 0);
+    }
+    100%{
+        background-color: rgb(9, 255, 0);
+    }
+}
+.trafficlights {
+    display: $d-flex;
+    height: 500px;
+    width: 200px;
+    background-color: $bg-trafficlights;
+    border-radius: 50px;
+    margin-top: 50px;
+    flex-flow: column;
+    align-items: center;
+    .circle {
+        height: 120px;
+        width: 120px;
+        margin-top: 35px;
+        border-radius: 50%;
+        .red {
+            height: 120px;
+            width: 120px;
+            border-radius: 50%;
+            background-color: rgb(66, 0, 0);
+            animation: redcolor 14s infinite;
+        }
+        .yellow {
+            height: 120px;
+            width: 120px;
+            border-radius: 50%;
+            background-color: rgb(65, 63, 0);
+            animation: yellowcolor 14s infinite;
+        }
+        .green {
+            height: 120px;
+            width: 120px;
+            border-radius: 50%;
+            background-color: rgb(1, 39, 0);
+            animation: greencolor 14s infinite;
+        }
+    }       
+}
+.pillar {
+    height: calc(100vh - 550px);
+    width: 50px;
+    background-color: $bg-pillar;
+    align-items: center;
+    justify-content: center;
+}

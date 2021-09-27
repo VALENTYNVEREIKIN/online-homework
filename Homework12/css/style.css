@@ -1,0 +1,324 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+@font-face {
+  font-family: "Ubuntu", sans-serif;
+  src: url(../fonts/Ubuntu/Ubuntu-Regular.ttf);
+}
+@font-face {
+  font-family: "UbuntuLight", sans-serif;
+  src: url(../fonts/Ubuntu/Ubuntu-Light.ttf);
+}
+@font-face {
+  font-family: "UbuntuLightItalic", sans-serif;
+  src: url(../fonts/Ubuntu/Ubuntu-LightItalic.ttf);
+}
+@font-face {
+  font-family: "UbuntuBold", sans-serif;
+  src: url(../fonts/Ubuntu/Ubuntu-Bold.ttf);
+}
+@font-face {
+  font-family: "UbuntuBoldItalic", sans-serif;
+  src: url(../fonts/Ubuntu/Ubuntu-BoldItalic.ttf);
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--body-color);
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --body-color: chocolate;
+}
+
+#wrapper {
+  display: flex;
+  position: relative;
+  overflow-x: hidden;
+  justify-content: center;
+  flex-flow: column;
+  align-items: center;
+}
+
+@-webkit-keyframes redcolor {
+  0% {
+    background-color: #ff3737;
+  }
+  50% {
+    background-color: #ff3737;
+  }
+  51% {
+    background-color: #420000;
+  }
+  100% {
+    background-color: #420000;
+  }
+}
+
+@keyframes redcolor {
+  0% {
+    background-color: #ff3737;
+  }
+  50% {
+    background-color: #ff3737;
+  }
+  51% {
+    background-color: #420000;
+  }
+  100% {
+    background-color: #420000;
+  }
+}
+@-webkit-keyframes yellowcolor {
+  0% {
+    background-color: #413f00;
+  }
+  38% {
+    background-color: #413f00;
+  }
+  39% {
+    background-color: #fff700;
+  }
+  40% {
+    background-color: #413f00;
+  }
+  41% {
+    background-color: #fff700;
+  }
+  42% {
+    background-color: #413f00;
+  }
+  43% {
+    background-color: #fff700;
+  }
+  44% {
+    background-color: #413f00;
+  }
+  45% {
+    background-color: #fff700;
+  }
+  50% {
+    background-color: #fff700;
+  }
+  51% {
+    background-color: #413f00;
+  }
+  88% {
+    background-color: #413f00;
+  }
+  89% {
+    background-color: #fff700;
+  }
+  90% {
+    background-color: #413f00;
+  }
+  91% {
+    background-color: #fff700;
+  }
+  92% {
+    background-color: #413f00;
+  }
+  93% {
+    background-color: #fff700;
+  }
+  94% {
+    background-color: #413f00;
+  }
+  95% {
+    background-color: #fff700;
+  }
+  100% {
+    background-color: #fff700;
+  }
+}
+@keyframes yellowcolor {
+  0% {
+    background-color: #413f00;
+  }
+  38% {
+    background-color: #413f00;
+  }
+  39% {
+    background-color: #fff700;
+  }
+  40% {
+    background-color: #413f00;
+  }
+  41% {
+    background-color: #fff700;
+  }
+  42% {
+    background-color: #413f00;
+  }
+  43% {
+    background-color: #fff700;
+  }
+  44% {
+    background-color: #413f00;
+  }
+  45% {
+    background-color: #fff700;
+  }
+  50% {
+    background-color: #fff700;
+  }
+  51% {
+    background-color: #413f00;
+  }
+  88% {
+    background-color: #413f00;
+  }
+  89% {
+    background-color: #fff700;
+  }
+  90% {
+    background-color: #413f00;
+  }
+  91% {
+    background-color: #fff700;
+  }
+  92% {
+    background-color: #413f00;
+  }
+  93% {
+    background-color: #fff700;
+  }
+  94% {
+    background-color: #413f00;
+  }
+  95% {
+    background-color: #fff700;
+  }
+  100% {
+    background-color: #fff700;
+  }
+}
+@-webkit-keyframes greencolor {
+  0% {
+    background-color: #012700;
+  }
+  50% {
+    background-color: #012700;
+  }
+  51% {
+    background-color: #09ff00;
+  }
+  100% {
+    background-color: #09ff00;
+  }
+}
+@keyframes greencolor {
+  0% {
+    background-color: #012700;
+  }
+  50% {
+    background-color: #012700;
+  }
+  51% {
+    background-color: #09ff00;
+  }
+  100% {
+    background-color: #09ff00;
+  }
+}
+.trafficlights {
+  display: flex;
+  height: 500px;
+  width: 200px;
+  background-color: black;
+  border-radius: 50px;
+  margin-top: 50px;
+  flex-flow: column;
+  align-items: center;
+}
+.trafficlights .circle {
+  height: 120px;
+  width: 120px;
+  margin-top: 35px;
+  border-radius: 50%;
+}
+.trafficlights .circle .red {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  background-color: #420000;
+  -webkit-animation: redcolor 14s infinite;
+          animation: redcolor 14s infinite;
+}
+.trafficlights .circle .yellow {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  background-color: #413f00;
+  -webkit-animation: yellowcolor 14s infinite;
+          animation: yellowcolor 14s infinite;
+}
+.trafficlights .circle .green {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  background-color: #012700;
+  -webkit-animation: greencolor 14s infinite;
+          animation: greencolor 14s infinite;
+}
+
+.pillar {
+  height: calc(100vh - 550px);
+  width: 50px;
+  background-color: black;
+  align-items: center;
+  justify-content: center;
+}/*# sourceMappingURL=style.css.map */
